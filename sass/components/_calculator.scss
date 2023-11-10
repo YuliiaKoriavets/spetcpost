@@ -44,8 +44,8 @@
 
 .calculator__form {
   display: flex;
-    justify-content: space-between;
-        align-items: flex-end;
+  justify-content: space-between;
+  align-items: flex-end;
   margin-top: 32px;
   padding: 32px;
   width: 1040px;
@@ -56,10 +56,10 @@
 }
 
 .calculator__form__label {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
   display: block;
   color: var(--title-text-color);
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .calculator__form__btn {

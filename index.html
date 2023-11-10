@@ -86,7 +86,7 @@
           </div>
         </div>
         <div class="hero__container">
-          <h2 class="title hero__title">Доставка документів по всьому світу</h2>
+          <h1 class="title hero__title">Доставка документів по всьому світу</h1>
           <p class="hero__text">
             Логістичний оператор, якого ви шукали. Відкриваємо можливості для
             Вас, Ваших клієнтів та партнерів
@@ -114,7 +114,7 @@
 
     <section class="section about__us">
       <div class="container about__us__container">
-        <h3 class="title about__us__title">Про нас</h3>
+        <h2 class="title about__us__title">Про нас</h2>
         <p class="about__us__text about__us__text--indented">
           Звернувшись до нас, ви можете бути впевнені, що ваші документи будуть
           доставлені до будь-якої точки світу в найкоротший термін. Наша
@@ -151,7 +151,7 @@
 
     <section class="section prices">
       <div class="container">
-        <h3 class="title prices__title">Ціни на наші послуги</h3>
+        <h2 class="title prices__title">Ціни на наші послуги</h2>
         <ul class="prices__list">
           <li class="prices__item">
             <svg class="prices__item__icon">
@@ -251,18 +251,295 @@
             <label class="calculator__form__label" for="country-of-sending"
               >Країна відправки</label
             >
-            <input class="calculator__form__input" id="country-of-sending" type="text" />
+            <input
+              class="calculator__form__input"
+              id="country-of-sending"
+              type="text"
+            />
           </div>
           <div>
             <label class="calculator__form__label" for="country-of-receiving"
               >Країна отримання</label
             >
-            <input class="calculator__form__input" id="country-of-receiving" type="text" />
+            <input
+              class="calculator__form__input"
+              id="country-of-receiving"
+              type="text"
+            />
           </div>
           <button class="btn calculator__form__btn" type="button">
             Дізнатися вартість
           </button>
         </form>
+      </div>
+    </section>
+
+    <section class="section services">
+      <div class="container">
+        <h2 class="title services__title">Наші послуги</h2>
+        <ul class="services__list">
+          <li class="services__item">
+            <div class="services__wrapper">
+              <picture>
+                <source
+                  srcset="
+                    ./img/documents1x@375.jpg 1x,
+                    ./img/documents2x@375.jpg 2x
+                  "
+                  media="(max-width: 1179px)"
+                />
+                <source
+                  srcset="
+                    ./img/documents1x@1180.jpg 1x,
+                    ./img/documents2x@1180.jpg 2x
+                  "
+                  media="(min-width: 1180px)"
+                />
+                <img
+                  src="./img/documents1x@1180.jpg"
+                  alt="Отримання документів"
+                />
+              </picture>
+              <div class="services__overlay">
+                <p class="services__text">
+                  Компанія SPETCPOST впевнено бере на себе завдання доставки
+                  документів, гарантуючи швидкість і надійність обслуговування.
+                  Ми розуміємо, що час і конфіденційність є критичними аспектами
+                  для наших клієнтів, тому ми пропонуємо надійні послуги
+                  доставки документів.
+                </p>
+              </div>
+            </div>
+            <div class="services__name__wrapper">
+              <h3 class="services__name">Доставка документів</h3>
+              <svg class="services__icon" width="16" height="16">
+                <use xlink:href="./img/icons.svg#arrow-top"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="services__item">
+            <div class="services__wrapper">
+              <picture>
+                <source
+                  srcset="./img/parcel1x@375.jpg 1x, ./img/parcel2x@375.jpg 2x"
+                  media="(max-width: 1179px)"
+                />
+                <source
+                  srcset="
+                    ./img/parcel1x@1180.jpg 1x,
+                    ./img/parcel2x@1180.jpg 2x
+                  "
+                  media="(min-width: 1180px)"
+                />
+                <img src="./img/parcel1x@1180.jpg" alt="Доставка посилки" />
+              </picture>
+              <div class="services__overlay">
+                <p class="services__text">
+                  Ми здійснюємо доставку вантажів, документів чи будь-якої іншої
+                  продукції. Наша команда професіоналів готова відповідати за
+                  надійність та ефективність наданих послуг. Ми пропонуємо
+                  різноманітні варіанти доставки, включаючи експрес-доставку та
+                  міжнародну доставку.
+                </p>
+              </div>
+            </div>
+            <div class="services__name__wrapper">
+              <h3 class="services__name">Послуги доставки</h3>
+              <svg class="services__icon" width="16" height="16">
+                <use xlink:href="./img/icons.svg#arrow-top"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="services__item">
+            <div class="services__wrapper">
+              <picture>
+                <source
+                  srcset="
+                    ./img/containers1x@375.jpg 1x,
+                    ./img/containers2x@375.jpg 2x
+                  "
+                  media="(max-width: 1179px)"
+                />
+                <source
+                  srcset="
+                    ./img/containers1x@1180.jpg 1x,
+                    ./img/containers2x@1180.jpg 2x
+                  "
+                  media="(min-width: 1180px)"
+                />
+                <img
+                  src="./img/containers1x@1180.jpg"
+                  alt="Склад контейнерів"
+                />
+              </picture>
+              <div class="services__overlay">
+                <p class="services__text">
+                  Ми володіємо експертизою в організації логістичних процесів і
+                  готові співпрацювати з Вами для розв'язання складних завдань з
+                  поставок. Наші логістичні рішення сприяють оптимізації
+                  операцій та зниженню витрат, забезпечуючи високий ступінь
+                  ефективності Вашого бізнесу.
+                </p>
+              </div>
+            </div>
+            <div class="services__name__wrapper">
+              <h3 class="services__name">Логістичні зв`язки</h3>
+              <svg class="services__icon" width="16" height="16">
+                <use xlink:href="./img/icons.svg#arrow-top"></use>
+              </svg>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section partners">
+      <div class="container">
+        <h2 class="title partners__title">Наші партнери</h2>
+        <ul class="partners__list">
+          <li class="partners__item">
+            <picture class="partners__img">
+              <source
+                srcset="
+                  ./img/fedex-logo1180.png    1x,
+                  ./img/fedex-logo1180@2x.png 2x
+                "
+                media="(min-width: 1180px)"
+              />
+              <img
+                src="./img/fedex-logo1180.png"
+                alt="Логотип компанії Федекс"
+              />
+            </picture>
+          </li>
+          <li class="partners__item">
+            <picture class="partners__img">
+              <source
+                srcset="./img/ups-logo1180.png 1x, ./img/ups-logo1180@2x.png 2x"
+                media="(min-width: 1180px)"
+              />
+              <img src="./img/ups-logo1180.png" alt="Логотип компанії ЮПіеС" />
+            </picture>
+          </li>
+          <li class="partners__item">
+            <picture class="partners__img">
+              <source
+                srcset="./img/tnt-logo1180.png 1x, ./img/tnt-logo1180@2x.png 2x"
+                media="(min-width: 1180px)"
+              />
+              <img src="./img/tnt-logo1180.png" alt="Логотип компанії ТіеНТі" />
+            </picture>
+          </li>
+          <li class="partners__item">
+            <picture class="partners__img">
+              <source
+                srcset="
+                  ./img/poczta-polska-logo1180.png    1x,
+                  ./img/poczta-polska-logo1180@2x.png 2x
+                "
+                media="(min-width: 1180px)"
+              />
+              <img
+                src="./img/poczta-polska-logo1180.png"
+                alt="Логотип компанії Пошта Полска"
+              />
+            </picture>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section advantages">
+      <div class="container">
+        <h2 class="title advantages__title">Чому ми?</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <svg class="advantages__icon" width="44" height="44">
+              <use xlink:href="./img/icons.svg#check-square"></use>
+            </svg>
+            <h4 class="advantages__subtitle">
+              Гарантована швидкість та своєчасність
+            </h4>
+            <p class="advantages__text">
+              Наша компанія забезпечує мінімальний час доставки та гарантує
+              доставку документів вчасно, відповідно до обумовленого графіку. Ми
+              робимо все можливе, щоб зменшити час доставки та забезпечити
+              найшвидшу обробку та передачу ваших документів.
+            </p>
+          </li>
+          <span class="advantages__line"></span>
+          <li class="advantages__item">
+            <svg class="advantages__icon" width="44" height="44">
+              <use xlink:href="./img/icons.svg#letter-unread"></use>
+            </svg>
+            <h4 class="advantages__subtitle">На звʼязку 24/7</h4>
+            <p class="advantages__text">
+              Наша команда завжди на зв'язку і готова відповісти та вирішити
+              Ваші питання в будь-який час. Це означає, що Ви можете звертатися
+              до нас будь-коли для отримання інформації, консультацій або
+              розв'язання питань, пов'язаних з доставкою Ваших документів.
+            </p>
+          </li>
+          <span class="advantages__line"></span>
+          <li class="advantages__item">
+            <svg class="advantages__icon" width="44" height="44">
+              <use xlink:href="./img/icons.svg#chat-round-like"></use>
+            </svg>
+            <h4 class="advantages__subtitle">Доступна вартість</h4>
+            <p class="advantages__text">
+              З урахуванням фінансових можливостей наших клієнтів, ми пропонуємо
+              послуги доставки документів за доступними конкурентоспроможними
+              тарифами, що дозволяє клієнтам економити на витратах, не жертвуючи
+              якістю обслуговування.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section contacts">
+      <div class="container contacts__overlay">
+        <div class="contacts__wrapper">
+          <h3 class="contacts__title title">Звяжіться з нами</h3>
+          <div class="contacts__wrapper__inputs">
+            <input
+              class="contacts__input contacts__input--size"
+              type="text"
+              placeholder="Ваше ім`я"
+            />
+            <input
+              class="contacts__input contacts__input--size"
+              type="text"
+              placeholder="E-mail"
+            />
+          </div>
+          <textarea
+            class="contacts__input contacts__input--textarea"
+            name=""
+            id=""
+            placeholder="Ваше повідомлення"
+          ></textarea>
+          <div class="contacts__wrapper__submit">
+            <div class="custom-checkbox">
+              <input type="checkbox" id="myCheckbox" class="hidden-checkbox" />
+              <label for="myCheckbox" class="styled-checkbox">
+                <svg class="checkbox-icon" width="14" height="14">
+                  <use xlink:href="./img/icons.svg#check"></use>
+                </svg>
+              </label>
+              <span class="contacts__span"
+                >Я ознайомився(лась) з “Політикою конфіденційності” та даю згоду
+                на обробку моїх персональних даних.</span
+              >
+            </div>
+            <button class="contacts__btn__submit" type="submit">
+              Відправити
+              <svg class="contacts__arrow__icon" width="13" height="13">
+                <use xlink:href="./img/icons.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </section>
 

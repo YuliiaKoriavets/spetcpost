@@ -1,0 +1,132 @@
+.contacts__overlay {
+  width: 345px;
+  height: 867px;
+  background: url(../../img/placing-order1x@375.jpg) no-repeat center;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background: url(../../img/placing-order2x@375.jpg) no-repeat center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 70px;
+    width: 1180px;
+    height: 489px;
+    background: url(../../img/placing-order1x@1180.jpg) no-repeat center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: url(../../img/placing-order2x@1180.jpg) no-repeat center;
+      background-size: cover;
+    }
+  }
+}
+
+.contacts__title {
+  color: var(--background-color);
+  margin-bottom: 50px;
+}
+
+.contacts__wrapper__inputs {
+  margin-bottom: 18px;
+  width: 638px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__input {
+  padding: 18px;
+  border: 1px solid var(--background-color);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+
+  &::placeholder {
+    color: var(--background-color);
+    font-weight: 300;
+  }
+}
+
+.contacts__input--textarea {
+  margin-bottom: 18px;
+  width: 638px;
+  height: 85px;
+}
+
+.contacts__input--size {
+  width: 309px;
+  height: 55px;
+}
+
+.contacts__wrapper__submit {
+  display: flex;
+  width: 483px;
+}
+
+.hidden-checkbox {
+  display: none;
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.styled-checkbox {
+    margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  background-color: var(--background-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.styled-checkbox:active {
+  outline: none;
+}
+
+.checkbox-icon {
+  display: none;
+  fill: var(--accent-color);
+  stroke: var(--accent-color);
+  stroke-width: 2;
+  border: 1px solid transparent;
+}
+
+.hidden-checkbox:checked + .styled-checkbox .checkbox-icon {
+  display: block;
+}
+
+.hidden-checkbox:checked + .styled-checkbox:active .checkbox-icon {
+  border: none;
+}
+
+.contacts__span {
+  display: block;
+  width: 268px;
+  font-size: 14px;
+font-weight: 300;
+  color: #CACACA;
+}
+
+.contacts__btn__submit {
+  display: flex;
+  align-items: center;
+  padding: 18px;
+  border: 1px solid var(--accent-color);
+  border-radius: 10px;
+  background-color: var(--background-color);
+  color: var(--accent-color);
+  text-transform: uppercase;
+}
+
+.contacts__arrow__icon {
+  margin-left: 10px;
+  fill: var(--accent-color);
+}
