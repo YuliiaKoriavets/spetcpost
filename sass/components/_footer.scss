@@ -1,0 +1,74 @@
+.footer {
+  position: relative;
+}
+
+.footer__wrapper--black {
+  height: 171px;
+  background-color: var(--title-text-color);
+}
+
+.footer__contacts__container {
+  padding-top: 26px;
+  padding-bottom: 26px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.address__container{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.address__icon {
+    margin-right: 10px;
+    fill: var(--accent-color);
+}
+
+.address__link {
+  display: block;
+  width: 250px;
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.address__icon{
+    fill: var(--accent-color);
+}
+
+.footer--line {
+  border: 1px solid var(--border-color);
+}
+
+.footer__rules__container {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__logo__wrapper {
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    top: 112px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 207px;
+    background: url(../../img/logo-footer-background1180@1x.png) no-repeat
+      center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: url(../../img/logo-footer-background1180@2x.png) no-repeat
+        center;
+      background-size: cover;
+    }
+  }
+}

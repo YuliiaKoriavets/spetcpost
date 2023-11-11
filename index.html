@@ -54,6 +54,16 @@
             <p class="contact__text">Пн-Пт 09:00 - 20:00</p>
           </div>
         </div>
+
+        <div class="header__logo__wrapper">
+          <picture class="header__logo__img">
+            <source
+              srcset="./img/logo1180@1x.png 1x, ./img/logo1180@2x.png 2x"
+              media="(min-width: 1180px)"
+            />
+            <img src="./img/logo1x@1180.png" alt="Логотип компанії Спетцпост" />
+          </picture>
+        </div>
       </div>
     </header>
 
@@ -107,10 +117,6 @@
         </div>
       </div>
     </section>
-
-    <div class="img__overlay">
-      <img src="./img/logo2x@1180.png" alt="logo" width="200" />
-    </div>
 
     <section class="section about__us">
       <div class="container about__us__container">
@@ -540,9 +546,153 @@
             </button>
           </div>
         </div>
+
+        <div class="border__overlay">
+          <div class="background__overlay">
+            <div class="contact__wrapper contacts--in__border">
+              <a
+                class="contact__link contacts__link__tel"
+                href="tel:+380674510202"
+                >+38 (067) 451 02 02</a
+              >
+              <p class="contact__text contacts__link__time">
+                Пн-Пт 09:00 - 20:00
+              </p>
+              <a class="contacts__link__mail" href="mailto:info@spetcpost.com">
+                <svg class="contacts__mail__icon" width="18" height="18">
+                  <use xlink:href="./img/icons.svg#mail"></use>
+                </svg>
+                info@spetcpost.com
+              </a>
+              <ul class="social__list contacts__social__list">
+                <li class="social__item">
+                  <a
+                    class="social__link contacts__social__link"
+                    aria-label="instagram"
+                    href="https://instagram.com/spetcpost?igshid=OGQ5ZDc2ODk2ZA=="
+                    target="_blank"
+                  >
+                    <svg
+                      class="social__icon contacts__social__icon"
+                      width="17"
+                      height="17"
+                    >
+                      <use xlink:href="./img/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a
+                    class="social__link contacts__social__link"
+                    aria-label="facebook"
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                  >
+                    <svg
+                      class="social__icon contacts__social__icon"
+                      width="16"
+                      height="16"
+                    >
+                      <use xlink:href="./img/icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a
+                    class="social__link contacts__social__link"
+                    aria-label="twitter"
+                    href="https://twitter.com/"
+                  >
+                    <svg
+                      class="social__icon contacts__social__icon"
+                      width="13"
+                      height="13"
+                    >
+                      <use xlink:href="./img/icons.svg#twitter-x"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer__wrapper--black"></div>
+      <div class="container footer__contacts__container">
+        <div class="address__container">
+            <svg class="address__icon" width="24" height="24">
+              <use xlink:href="./img/icons.svg#location"></use>
+            </svg>
+            <a class="address__link" href="https://maps.app.goo.gl/e9KYPDbjPA6Mk34M7" target="_blank" rel="noopener noreferrer">
+              Україна, 04053, м. Київ, Вознесенський узвіз, 10-А</a>
+        </div>
+      
+        <div class="contact__container">
+          <ul class="social__list">
+            <li class="social__item">
+              <a
+                class="social__link"
+                aria-label="instagram"
+                href="https://instagram.com/spetcpost?igshid=OGQ5ZDc2ODk2ZA=="
+                target="_blank"
+              >
+                <svg class="social__icon" width="17" height="17">
+                  <use xlink:href="./img/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link"
+                aria-label="facebook"
+                href="https://www.facebook.com/"
+                target="_blank"
+              >
+                <svg class="social__icon" width="16" height="16">
+                  <use xlink:href="./img/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link"
+                aria-label="twitter"
+                href="https://twitter.com/"
+              >
+                <svg class="social__icon" width="13" height="13">
+                  <use xlink:href="./img/icons.svg#twitter-x"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="contact__wrapper">
+            <a class="contact__link" href="tel:+380674510202"
+              >+38 (067) 451 02 02</a
+            >
+            <p class="contact__text">Пн-Пт 09:00 - 20:00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer--line"></div>
+
+      <div class="container footer__rules__container">
+        <p>© SPETPOST | 2023</p>
+        <p>Усі права захищено</p>
+      </div>
+
+      <div class="footer__logo__wrapper">
+        <picture class="footer__logo__img">
+          <source
+            srcset="./img/logo1180@1x.png 1x, ./img/logo1180@2x.png 2x"
+            media="(min-width: 1180px)"
+          />
+          <img src="./img/logo1x@1180.png" alt="Логотип компанії Спетцпост" />
+        </picture>
+      </div>
+    </footer>
   </body>
 </html>
