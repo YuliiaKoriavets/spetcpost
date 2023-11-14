@@ -98,7 +98,7 @@
         <div class="hero__container">
           <h1 class="title hero__title">Доставка документів по всьому світу</h1>
           <p class="hero__text">
-            Логістичний оператор, якого ви шукали. Відкриваємо можливості для
+            Логістичний оператор, якого Ви шукали. Відкриваємо можливості для
             Вас, Ваших клієнтів та партнерів
           </p>
           <div class="hero__input__box">
@@ -403,8 +403,15 @@
       <div class="container">
         <h2 class="title partners__title">Наші партнери</h2>
         <ul class="partners__list">
-          <li class="partners__item">
+          <li class="partners__item partners__item--left">
             <picture class="partners__img">
+              <source
+                srcset="
+                  ./img/fedex-logo375.png 1x,
+                  ./img/fedex-logo375@2x.png 2x
+                "
+                media="(max-width: 1179px)"
+              />
               <source
                 srcset="
                   ./img/fedex-logo1180.png    1x,
@@ -418,8 +425,12 @@
               />
             </picture>
           </li>
-          <li class="partners__item">
+          <li class="partners__item partners__item--right">
             <picture class="partners__img">
+              <source
+                srcset="./img/ups-logo375.png 1x, ./img/ups-logo375@2x.png 2x"
+                media="(max-width: 1179px)"
+              />
               <source
                 srcset="./img/ups-logo1180.png 1x, ./img/ups-logo1180@2x.png 2x"
                 media="(min-width: 1180px)"
@@ -427,8 +438,14 @@
               <img src="./img/ups-logo1180.png" alt="Логотип компанії ЮПіеС" />
             </picture>
           </li>
-          <li class="partners__item">
+          <div class="line--horizontal"></div>
+          <div class="line--vertical"></div>
+          <li class="partners__item partners__item--left">
             <picture class="partners__img">
+              <source
+                srcset="./img/tnt-logo375.png 1x, ./img/tnt-logo375@2x.png 2x"
+                media="(max-width: 1179px)"
+              />
               <source
                 srcset="./img/tnt-logo1180.png 1x, ./img/tnt-logo1180@2x.png 2x"
                 media="(min-width: 1180px)"
@@ -436,8 +453,15 @@
               <img src="./img/tnt-logo1180.png" alt="Логотип компанії ТіеНТі" />
             </picture>
           </li>
-          <li class="partners__item">
+          <li class="partners__item partners__item--right">
             <picture class="partners__img">
+              <source
+                srcset="
+                  ./img/poczta-polska-logo375.png    1x,
+                  ./img/poczta-polska-logo375@2x.png 2x
+                "
+                media="(max-width: 1179px)"
+              />
               <source
                 srcset="
                   ./img/poczta-polska-logo1180.png    1x,
@@ -623,13 +647,19 @@
       <div class="footer__wrapper--black"></div>
       <div class="container footer__contacts__container">
         <div class="address__container">
-            <svg class="address__icon" width="24" height="24">
-              <use xlink:href="./img/icons.svg#location"></use>
-            </svg>
-            <a class="address__link" href="https://maps.app.goo.gl/e9KYPDbjPA6Mk34M7" target="_blank" rel="noopener noreferrer">
-              Україна, 04053, м. Київ, Вознесенський узвіз, 10-А</a>
+          <svg class="address__icon" width="24" height="24">
+            <use xlink:href="./img/icons.svg#location"></use>
+          </svg>
+          <a
+            class="address__link"
+            href="https://maps.app.goo.gl/e9KYPDbjPA6Mk34M7"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Україна, 04053, м. Київ, Вознесенський узвіз, 10-А</a
+          >
         </div>
-      
+
         <div class="contact__container">
           <ul class="social__list">
             <li class="social__item">

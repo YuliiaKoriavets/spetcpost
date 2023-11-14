@@ -1,12 +1,15 @@
 .calculator__overlay {
+  padding: 32px;
   width: 345px;
   height: 762px;
   background: url(../../img/registration-of-parcel1x@375.jpg) no-repeat center;
+  background-size: cover;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background: url(../../img/registration-of-parcel2x@375.jpg) no-repeat center;
+    background-size: cover;
   }
 
   @media screen and (min-width: $desktop) {
@@ -29,13 +32,27 @@
 
 .calculator__title {
   color: var(--background-color);
-  margin-bottom: 50px;
+
+  @media screen and (max-width: $pre-desk) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }
 
 .calculator__text {
   color: var(--background-color);
-  font-size: 20px;
   font-weight: 300;
+
+  @media screen and (max-width: $pre-desk) {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 20px;
+  }
 }
 
 .calculator__text--backdown {
@@ -45,28 +62,49 @@
 .calculator__form {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  margin-top: 32px;
-  padding: 32px;
-  width: 1040px;
-  height: 150px;
   border: 1px solid var(--accent-color);
   border-radius: 10px;
   background-color: var(--background-color);
+
+  @media screen and (max-width: $pre-desk) {
+    margin-top: 24px;
+    padding: 18px;
+    width: 281px;
+    height: 276px;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 32px;
+    padding: 32px;
+    width: 1040px;
+    height: 150px;
+    align-items: flex-end;
+  }
 }
 
 .calculator__form__label {
-  margin-bottom: 12px;
   display: block;
   color: var(--title-text-color);
   font-weight: 600;
+
+  @media screen and (max-width: $pre-desk) {
+    margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 12px;
+  }
 }
 
 .calculator__form__btn {
-  padding-left: 36px;
-  padding-right: 36px;
   height: 55px;
   color: var(--background-color);
   background-color: var(--accent-color);
   border: none;
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
 }

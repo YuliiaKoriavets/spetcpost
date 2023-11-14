@@ -1,12 +1,36 @@
 .header__container {
   position: relative;
   display: flex;
-  justify-content: end;
-  padding-top: 19px;
-  padding-bottom: 19px;
+
+  @media screen and (max-width: $pre-desk) {
+    padding-top: 61px;
+    padding-bottom: 33px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    justify-content: end;
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
 }
 
 .header__logo__wrapper {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 107px;
+  height: 155px;
+  background: url(../../img/header-logo-background375@1x.png) no-repeat center;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background: url(../../img/header-logo-background375@2x.png) no-repeat center;
+  }
   @media screen and (min-width: $desktop) {
     position: absolute;
     top: 0px;

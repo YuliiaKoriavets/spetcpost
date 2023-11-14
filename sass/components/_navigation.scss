@@ -1,23 +1,29 @@
-.site__nav__container{
+.site__nav__container {
+  @media screen and (max-width: $pre-desk) {
+    display: none;
+  }
+
+  @media screen and (min-width: $desktop) {
     padding-top: 30px;
     padding-bottom: 30px;
     height: 76px;
     background-color: rgba(111, 75, 39, 0.4);
+  }
 }
 
-.site__nav__container--inside{
-    display: flex;
-    justify-content: space-between;
+.site__nav__container--inside {
+  display: flex;
+  justify-content: space-between;
 }
 
-.site__nav__list{
-    display: flex;
-    gap: 58px;
+.site__nav__list {
+  display: flex;
+  gap: 58px;
 }
 
-.site__nav__link{
-    font-weight: 500;
-    font-size: 14px;
-    color: var(--background-color);
-    text-transform: uppercase;
+.site__nav__link {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--background-color);
+  text-transform: uppercase;
 }
