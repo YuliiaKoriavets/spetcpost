@@ -9,11 +9,11 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <div class="mob__menu__wrapper">
+        <button class="mob__menu__wrapper js-open-menu" type="button">
           <svg class="menu__icon" width="17" height="17">
             <use xlink:href="./img/icons.svg#menu"></use>
           </svg>
-        </div>
+        </button>
         <div class="contact__container">
           <ul class="social__list">
             <li class="social__item">
@@ -75,6 +75,71 @@
         </div>
       </div>
     </header>
+
+
+<div class="mob-menu js-menu-container">
+  <div class="container mob-menu__body">
+
+    <div>
+      <h3 class="mob__nav__subtitle">Карта сайту</h3>
+      <div class="mob__nav__line"></div>
+      <ul class="mob__nav__list">
+        <li><a class="mob__nav__link" href="#">Про нас</a></li>
+        <li><a class="mob__nav__link" href="#">Тарифи</a></li>
+        <li><a class="mob__nav__link" href="#">Калькулятор</a></li>
+        <li><a class="mob__nav__link" href="#">Послуги</a></li>
+        <li><a class="mob__nav__link" href="#">Переваги</a></li>
+        <li><a class="mob__nav__link" href="#">Контакти</a></li>
+      </ul>
+    </div>
+
+    <div class="nav__contacts">
+      <h3 class="mob__nav__subtitle">Контакти</h3>
+      <div class="mob__nav__line"></div>
+      
+
+    <div class="contact__wrapper ">
+      <a class="contact__link contact__link__tel--mob" href="tel:+380674510202">+38 (067) 451 02 02</a>
+      <p class="contact__text contacts__text__time--mob">
+        Пн-Пт 09:00 - 20:00
+      </p>
+      <a class="contacts__link__mail--mob" href="mailto:info@spetcpost.com">
+        <svg class="contacts__mail__icon contacts__mail__icon--mob" width="18" height="18">
+          <use xlink:href="./img/icons.svg#mail"></use>
+        </svg>
+        info@spetcpost.com
+      </a>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link " aria-label="instagram"
+            href="https://instagram.com/spetcpost?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
+            <svg class="social__icon " width="17" height="17">
+              <use xlink:href="./img/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" aria-label="facebook" href="https://www.facebook.com/"
+            target="_blank">
+            <svg class="social__icon" width="16" height="16">
+              <use xlink:href="./img/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" aria-label="twitter" href="https://twitter.com/">
+            <svg class="social__icon" width="13" height="13">
+              <use xlink:href="./img/icons.svg#twitter-x"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+
 
     <section class="hero">
       <div class="hero__overlay">
@@ -757,5 +822,8 @@
         </picture>
       </div>
     </footer>
+
+    <script src="js/mobile-menu.js"></script>
+
   </body>
 </html>
