@@ -1,14 +1,22 @@
 .contact__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 320px;
-  gap: 12px;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 320px;
+    gap: 12px;
+  }
 }
 
 .social__list {
   display: flex;
-  gap: 10px;
+
+  @media screen and (max-width: $pre-desk) {
+    gap: 8px;
+  }
+  @media screen and (min-width: $desktop) {
+    gap: 10px;
+  }
 }
 
 .social__link {
@@ -21,18 +29,25 @@
   border: 1px solid var(--border-color);
 }
 
+.social__link--small {
+  @media screen and (max-width: $pre-desk) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
 .contact__wrapper {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
 
-@media screen and (max-width: $pre-desk) {
-        display: none;
-    }
-
-    @media screen and (min-width: $desktop) {
-        display: flex;
-            flex-direction: column;
-            gap: 8px;
-    }
- 
+.contact__wrapper-mob {
+  @media screen and (max-width: $pre-desk) {
+    display: none;
+  }
 }
 
 .contact__link {
@@ -41,8 +56,8 @@
   color: var(--accent-color);
 }
 
-.social__icon{
-    fill: var(--accent-color);
+.social__icon {
+  fill: var(--accent-color);
 }
 
 .contact__text {

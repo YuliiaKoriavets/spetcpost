@@ -9,11 +9,16 @@
   <body>
     <header class="header">
       <div class="container header__container">
+        <div class="mob__menu__wrapper">
+          <svg class="menu__icon" width="17" height="17">
+            <use xlink:href="./img/icons.svg#menu"></use>
+          </svg>
+        </div>
         <div class="contact__container">
           <ul class="social__list">
             <li class="social__item">
               <a
-                class="social__link"
+                class="social__link social__link--small"
                 aria-label="instagram"
                 href="https://instagram.com/spetcpost?igshid=OGQ5ZDc2ODk2ZA=="
                 target="_blank"
@@ -25,7 +30,7 @@
             </li>
             <li class="social__item">
               <a
-                class="social__link"
+                class="social__link social__link--small"
                 aria-label="facebook"
                 href="https://www.facebook.com/"
                 target="_blank"
@@ -37,7 +42,7 @@
             </li>
             <li class="social__item">
               <a
-                class="social__link"
+                class="social__link social__link--small"
                 aria-label="twitter"
                 href="https://twitter.com/"
               >
@@ -47,7 +52,7 @@
               </a>
             </li>
           </ul>
-          <div class="contact__wrapper">
+          <div class="contact__wrapper contact__wrapper-mob">
             <a class="contact__link" href="tel:+380674510202"
               >+38 (067) 451 02 02</a
             >
@@ -58,10 +63,14 @@
         <div class="header__logo__wrapper">
           <picture class="header__logo__img">
             <source
+              srcset="./img/logo375@1x.png 1x, ./img/logo375@2x.png 2x"
+              media="(max-width: 1179px)"
+            />
+            <source
               srcset="./img/logo1180@1x.png 1x, ./img/logo1180@2x.png 2x"
               media="(min-width: 1180px)"
             />
-            <img src="./img/logo1x@1180.png" alt="Логотип компанії Спетцпост" />
+            <img src="./img/logo1180@1x.png" alt="Логотип компанії Спетцпост" />
           </picture>
         </div>
       </div>
@@ -407,7 +416,7 @@
             <picture class="partners__img">
               <source
                 srcset="
-                  ./img/fedex-logo375.png 1x,
+                  ./img/fedex-logo375.png    1x,
                   ./img/fedex-logo375@2x.png 2x
                 "
                 media="(max-width: 1179px)"
@@ -644,9 +653,29 @@
     </section>
 
     <footer class="footer">
-      <div class="footer__wrapper--black"></div>
+      <div class="footer__wrapper--black">
+        <div class="address__container address__container--desc-hidden">
+          <svg class="address__icon" width="24" height="24">
+            <use xlink:href="./img/icons.svg#location"></use>
+          </svg>
+          <a
+            class="address__link"
+            href="https://maps.app.goo.gl/e9KYPDbjPA6Mk34M7"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Україна, 04053, м. Київ, Вознесенський узвіз, 10-А</a
+          >
+        </div>
+      </div>
       <div class="container footer__contacts__container">
-        <div class="address__container">
+        <div class="mob__menu__wrapper">
+          <svg class="menu__icon" width="17" height="17">
+            <use xlink:href="./img/icons.svg#menu"></use>
+          </svg>
+        </div>
+
+        <div class="address__container address__container--mob-hidden">
           <svg class="address__icon" width="24" height="24">
             <use xlink:href="./img/icons.svg#location"></use>
           </svg>
@@ -664,7 +693,7 @@
           <ul class="social__list">
             <li class="social__item">
               <a
-                class="social__link"
+                class="social__link social__link--small"
                 aria-label="instagram"
                 href="https://instagram.com/spetcpost?igshid=OGQ5ZDc2ODk2ZA=="
                 target="_blank"
@@ -676,7 +705,7 @@
             </li>
             <li class="social__item">
               <a
-                class="social__link"
+                class="social__link social__link--small"
                 aria-label="facebook"
                 href="https://www.facebook.com/"
                 target="_blank"
@@ -688,7 +717,7 @@
             </li>
             <li class="social__item">
               <a
-                class="social__link"
+                class="social__link social__link--small"
                 aria-label="twitter"
                 href="https://twitter.com/"
               >
@@ -698,7 +727,7 @@
               </a>
             </li>
           </ul>
-          <div class="contact__wrapper">
+          <div class="contact__wrapper contact__wrapper--footer">
             <a class="contact__link" href="tel:+380674510202"
               >+38 (067) 451 02 02</a
             >
@@ -717,10 +746,14 @@
       <div class="footer__logo__wrapper">
         <picture class="footer__logo__img">
           <source
+            srcset="./img/logo375@1x.png 1x, ./img/logo375@2x.png 2x"
+            media="(max-width: 1179px)"
+          />
+          <source
             srcset="./img/logo1180@1x.png 1x, ./img/logo1180@2x.png 2x"
             media="(min-width: 1180px)"
           />
-          <img src="./img/logo1x@1180.png" alt="Логотип компанії Спетцпост" />
+          <img src="./img/logo1180@1x.png" alt="Логотип компанії Спетцпост" />
         </picture>
       </div>
     </footer>

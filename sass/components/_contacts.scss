@@ -1,13 +1,16 @@
 .contacts__overlay {
   position: relative;
+  padding: 32px;
   width: 345px;
   height: 867px;
   background: url(../../img/placing-order1x@375.jpg) no-repeat center;
+  background-size: cover;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background: url(../../img/placing-order2x@375.jpg) no-repeat center;
+    background-size: cover;
   }
 
   @media screen and (min-width: $desktop) {
@@ -28,20 +31,35 @@
 
 .contacts__title {
   color: var(--background-color);
-  margin-bottom: 50px;
+  @media screen and (max-width: $pre-desk) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }
 
 .contacts__wrapper__inputs {
-  margin-bottom: 18px;
-  width: 638px;
   display: flex;
-  justify-content: space-between;
+  margin-bottom: 18px;
+
+  @media screen and (max-width: $pre-desk) {
+    width: 281px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 638px;
+    justify-content: space-between;
+  }
 }
 
 .contacts__input {
   padding: 18px;
   border: 1px solid var(--background-color);
-  border-radius: 10px;
+  border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.3);
 
   &::placeholder {
@@ -52,18 +70,40 @@
 
 .contacts__input--textarea {
   margin-bottom: 18px;
-  width: 638px;
   height: 85px;
+
+  @media screen and (max-width: $pre-desk) {
+    width: 281px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 638px;
+  }
 }
 
 .contacts__input--size {
-  width: 309px;
   height: 55px;
+
+  @media screen and (max-width: $pre-desk) {
+    width: 281px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 309px;
+  }
 }
 
 .contacts__wrapper__submit {
   display: flex;
-  width: 483px;
+
+  @media screen and (max-width: $pre-desk) {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 483px;
+  }
 }
 
 .hidden-checkbox {
@@ -110,21 +150,35 @@
 
 .contacts__span {
   display: block;
-  width: 268px;
-  font-size: 14px;
   font-weight: 300;
   color: #cacaca;
+
+  @media screen and (max-width: $pre-desk) {
+    width: 240px;
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 268px;
+    font-size: 14px;
+  }
 }
 
 .contacts__btn__submit {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 18px;
   border: 1px solid var(--accent-color);
-  border-radius: 10px;
+  border-radius: 8px;
   background-color: var(--background-color);
   color: var(--accent-color);
   text-transform: uppercase;
+
+  @media screen and (max-width: $pre-desk) {
+    width: 281px;
+    height: 55px;
+  }
 }
 
 .contacts__arrow__icon {
@@ -133,27 +187,60 @@
 }
 
 .border__overlay {
-  @media screen and (min-width: $desktop) {
-    position: absolute;
-    top: 0px;
-    right: 94px;
-    padding-left: 6px;
-    padding-right: 6px;
+  position: absolute;
+  padding-left: 6px;
+  padding-right: 6px;
+
+  @media screen and (max-width: $pre-desk) {
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding-top: 6px;
     width: 292px;
-    height: 379px;
-    background: url(../../img/border.png) no-repeat center;
+    height: 295px;
+    background: url(../../img/mob-border1x@375.png) no-repeat center;
     background-size: cover;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background: url(../../img/border@2x.png) no-repeat center;
+      background: url(../../img/mob-border2x@375.png) no-repeat center;
+      background-size: cover;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    top: 0px;
+    right: 94px;
+    width: 292px;
+    height: 379px;
+    background: url(../../img/border1x@1180.png) no-repeat center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: url(../../img/border2x@1180.png) no-repeat center;
       background-size: cover;
     }
   }
 }
 
 .background__overlay {
+  @media screen and (max-width: $pre-desk) {
+    width: 280px;
+    height: 289px;
+    background: url(../../img/background1x@375.png) no-repeat center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: url(../../img/background2x@375.png) no-repeat center;
+      background-size: cover;
+    }
+  }
+
   @media screen and (min-width: $desktop) {
     width: 280px;
     height: 373px;
@@ -170,26 +257,51 @@
 }
 
 .contacts--in__border {
-  padding-top: 105px;
+  @media screen and (max-width: $pre-desk) {
+    padding-top: 82px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 105px;
+  }
 }
 
 .contacts__link__tel {
   margin-bottom: 4px;
   text-align: center;
   color: var(--background-color);
+
+  @media screen and (max-width: $pre-desk) {
+    display: block;
+    font-weight: 700;
+  }
 }
 
 .contacts__link__time {
-  margin-bottom: 50px;
   color: var(--background-color);
   font-size: 12px;
+
+  @media screen and (max-width: $pre-desk) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }
 
 .contacts__link__mail {
-  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   color: var(--background-color);
+
+  @media screen and (max-width: $pre-desk) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }
 
 .contacts__mail__icon {
@@ -199,6 +311,10 @@
 .contacts__social__list {
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (max-width: $pre-desk) {
+    justify-content: center;
+  }
 }
 
 .contacts__social__link {

@@ -110,3 +110,19 @@ body {
     padding-bottom: 18px;
   }
 }
+
+.mob__menu__wrapper {
+  @media screen and (max-width: $pre-desk) {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent-color);
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
