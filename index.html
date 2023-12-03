@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SPETCPOST</title>
     <link rel="stylesheet" href="./dist/css/main.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <header class="header">
@@ -76,70 +77,154 @@
       </div>
     </header>
 
+    <div class="mob-menu js-menu-container">
+      <div class="container mob-menu__body">
+        <header class="header">
+          <div class="container header__container mob-menu__header__container">
+            <button class="mob__menu__wrapper js-close-menu" type="button">
+              <svg class="close__icon" width="17" height="17">
+                <use xlink:href="./img/icons.svg#close"></use>
+              </svg>
+            </button>
+            <div class="contact__container">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a
+                    class="social__link social__link--small"
+                    aria-label="instagram"
+                    href="https://instagram.com/spetcpost?igshid=OGQ5ZDc2ODk2ZA=="
+                    target="_blank"
+                  >
+                    <svg class="social__icon" width="17" height="17">
+                      <use xlink:href="./img/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a
+                    class="social__link social__link--small"
+                    aria-label="facebook"
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                  >
+                    <svg class="social__icon" width="16" height="16">
+                      <use xlink:href="./img/icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a
+                    class="social__link social__link--small"
+                    aria-label="twitter"
+                    href="https://twitter.com/"
+                  >
+                    <svg class="social__icon" width="13" height="13">
+                      <use xlink:href="./img/icons.svg#twitter-x"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
 
-<div class="mob-menu js-menu-container">
-  <div class="container mob-menu__body">
+            <div class="header__logo__wrapper">
+              <picture class="header__logo__img">
+                <source
+                  srcset="./img/logo375@1x.png 1x, ./img/logo375@2x.png 2x"
+                  media="(max-width: 1179px)"
+                />
+                <source
+                  srcset="./img/logo1180@1x.png 1x, ./img/logo1180@2x.png 2x"
+                  media="(min-width: 1180px)"
+                />
+                <img
+                  src="./img/logo1180@1x.png"
+                  alt="Логотип компанії Спетцпост"
+                />
+              </picture>
+            </div>
+          </div>
+        </header>
 
-    <div>
-      <h3 class="mob__nav__subtitle">Карта сайту</h3>
-      <div class="mob__nav__line"></div>
-      <ul class="mob__nav__list">
-        <li><a class="mob__nav__link" href="#">Про нас</a></li>
-        <li><a class="mob__nav__link" href="#">Тарифи</a></li>
-        <li><a class="mob__nav__link" href="#">Калькулятор</a></li>
-        <li><a class="mob__nav__link" href="#">Послуги</a></li>
-        <li><a class="mob__nav__link" href="#">Переваги</a></li>
-        <li><a class="mob__nav__link" href="#">Контакти</a></li>
-      </ul>
+        <div>
+          <h3 class="mob__nav__subtitle">Карта сайту</h3>
+          <div class="mob__nav__line"></div>
+          <ul class="mob__nav__list">
+            <li><a class="mob__nav__link" href="#about__us">Про нас</a></li>
+            <li><a class="mob__nav__link" href="#prices">Тарифи</a></li>
+            <li><a class="mob__nav__link" href="#calculator">Калькулятор</a></li>
+            <li><a class="mob__nav__link" href="#services">Послуги</a></li>
+            <li><a class="mob__nav__link" href="#advantages">Переваги</a></li>
+            <li><a class="mob__nav__link" href="#contacts">Контакти</a></li>
+          </ul>
+        </div>
+
+        <div class="nav__contacts">
+          <h3 class="mob__nav__subtitle">Контакти</h3>
+          <div class="mob__nav__line"></div>
+
+          <div class="contact__wrapper">
+            <a
+              class="contact__link contact__link__tel--mob"
+              href="tel:+380674510202"
+              >+38 (067) 451 02 02</a
+            >
+            <p class="contact__text contacts__text__time--mob">
+              Пн-Пт 09:00 - 20:00
+            </p>
+            <a
+              class="contacts__link__mail--mob"
+              href="mailto:info@spetcpost.com"
+            >
+              <svg
+                class="contacts__mail__icon contacts__mail__icon--mob"
+                width="18"
+                height="18"
+              >
+                <use xlink:href="./img/icons.svg#mail"></use>
+              </svg>
+              info@spetcpost.com
+            </a>
+            <ul class="social__list">
+              <li class="social__item">
+                <a
+                  class="social__link"
+                  aria-label="instagram"
+                  href="https://instagram.com/spetcpost?igshid=OGQ5ZDc2ODk2ZA=="
+                  target="_blank"
+                >
+                  <svg class="social__icon" width="17" height="17">
+                    <use xlink:href="./img/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  class="social__link"
+                  aria-label="facebook"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                >
+                  <svg class="social__icon" width="16" height="16">
+                    <use xlink:href="./img/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  class="social__link"
+                  aria-label="twitter"
+                  href="https://twitter.com/"
+                >
+                  <svg class="social__icon" width="13" height="13">
+                    <use xlink:href="./img/icons.svg#twitter-x"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="nav__contacts">
-      <h3 class="mob__nav__subtitle">Контакти</h3>
-      <div class="mob__nav__line"></div>
-      
-
-    <div class="contact__wrapper ">
-      <a class="contact__link contact__link__tel--mob" href="tel:+380674510202">+38 (067) 451 02 02</a>
-      <p class="contact__text contacts__text__time--mob">
-        Пн-Пт 09:00 - 20:00
-      </p>
-      <a class="contacts__link__mail--mob" href="mailto:info@spetcpost.com">
-        <svg class="contacts__mail__icon contacts__mail__icon--mob" width="18" height="18">
-          <use xlink:href="./img/icons.svg#mail"></use>
-        </svg>
-        info@spetcpost.com
-      </a>
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link " aria-label="instagram"
-            href="https://instagram.com/spetcpost?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
-            <svg class="social__icon " width="17" height="17">
-              <use xlink:href="./img/icons.svg#instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" aria-label="facebook" href="https://www.facebook.com/"
-            target="_blank">
-            <svg class="social__icon" width="16" height="16">
-              <use xlink:href="./img/icons.svg#facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" aria-label="twitter" href="https://twitter.com/">
-            <svg class="social__icon" width="13" height="13">
-              <use xlink:href="./img/icons.svg#twitter-x"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-  </div>
-</div>
-
-
 
     <section class="hero">
       <div class="hero__overlay">
@@ -147,24 +232,24 @@
           <div class="container site__nav__container--inside">
             <ul class="site__nav__list">
               <li class="site__nav__item">
-                <a class="site__nav__link" href="">Про нас</a>
+                <a class="site__nav__link" href="#about__us">Про нас</a>
               </li>
               <li class="site__nav__item">
-                <a class="site__nav__link" href="">Тарифи</a>
+                <a class="site__nav__link" href="#prices">Тарифи</a>
               </li>
               <li class="site__nav__item">
-                <a class="site__nav__link" href="">Калькулятор</a>
+                <a class="site__nav__link" href="#calculator">Калькулятор</a>
               </li>
             </ul>
             <ul class="site__nav__list">
               <li class="site__nav__item">
-                <a class="site__nav__link" href="">Послуги</a>
+                <a class="site__nav__link" href="#services">Послуги</a>
               </li>
               <li class="site__nav__item">
-                <a class="site__nav__link" href="">Переваги</a>
+                <a class="site__nav__link" href="#advantages">Переваги</a>
               </li>
               <li class="site__nav__item">
-                <a class="site__nav__link" href="">Контакти</a>
+                <a class="site__nav__link" href="#contacts">Контакти</a>
               </li>
             </ul>
           </div>
@@ -175,24 +260,31 @@
             Логістичний оператор, якого Ви шукали. Відкриваємо можливості для
             Вас, Ваших клієнтів та партнерів
           </p>
-          <div class="hero__input__box">
+
+          <form class="tracking__form" id="tracking-form">
             <input
-              class="hero__input"
+              id="tracking-number"
+              name="numbers"
+              class="tracking__form__input"
               type="text"
+              autocomplete="off"
               placeholder="Вкажіть номер накладної"
             />
-            <button class="btn hero__input__btn" type="button">
+            <button class="btn tracking__form__btn" type="submit">
               Відстежити
               <svg class="hero__arrow__icon" width="16" height="16">
-                <use xlink:href="./img/icons.svg#arrow-right"></use>
+                <use xlink:href="./img/icons.svg#hero-arrow-right"></use>
               </svg>
             </button>
-          </div>
+          </form>
+
+          <div class="result-container"></div>
+
         </div>
       </div>
     </section>
 
-    <section class="section about__us">
+    <section class="section about__us" id="about__us">
       <div class="container about__us__container">
         <h2 class="title about__us__title">Про нас</h2>
         <p class="about__us__text about__us__text--indented">
@@ -212,7 +304,7 @@
       </div>
     </section>
 
-    <section class="order">
+    <section class="order" id="order">
       <div class="container order__overlay">
         <h3 class="title order__title">
           Замовляйте послуги доставки паспортів
@@ -229,93 +321,113 @@
       </div>
     </section>
 
-    <section class="section prices">
+    <section class="section prices" id="prices">
       <div class="container">
         <h2 class="title prices__title">Ціни на наші послуги</h2>
-        <ul class="prices__list">
-          <li class="prices__item">
-            <svg class="prices__item__icon">
-              <use xlink:href="./img/icons.svg#document"></use>
+        <div class="slider-container">
+          <ul class="prices__list slider">
+            <li class="prices__item slide">
+              <svg class="prices__item__icon">
+                <use xlink:href="./img/icons.svg#document"></use>
+              </svg>
+              <h4 class="prices__item__subtitle">
+                Міжнародна доставка документів
+              </h4>
+              <ul class="prices__item__list">
+                <li class="prices__item__text">Великий рівень надійності</li>
+                <li class="prices__item__text">Швидкі терміни доставки</li>
+                <li class="prices__item__text">Доставка отримувача</li>
+                <li class="prices__item__text">Доставка по всьому Світу</li>
+                <li class="prices__item__text">Відстеження та звітність</li>
+                <li class="prices__item__text">Конфіденційність та безпека</li>
+              </ul>
+              <div class="prices__item__box">
+                <p class="prices__item__box__text">від 1400 грн</p>
+              </div>
+            </li>
+            <li class="prices__item slide">
+              <svg class="prices__item__icon">
+                <use xlink:href="./img/icons.svg#parcel"></use>
+              </svg>
+              <h4 class="prices__item__subtitle">
+                Міжнародна доставка посилок
+              </h4>
+              <ul class="prices__item__list">
+                <li class="prices__item__text">Індивідуальна страховка</li>
+                <li class="prices__item__text">Трекінг та відстеження</li>
+                <li class="prices__item__text">Експрес-доставка</li>
+                <li class="prices__item__text">Вантажні послуги</li>
+                <li class="prices__item__text">Таможенне оформлення</li>
+                <li class="prices__item__text">Підтримка клієнтів 24/7</li>
+              </ul>
+              <div class="prices__item__box">
+                <p class="prices__item__box__text">від 1200 грн</p>
+              </div>
+            </li>
+            <li class="prices__item slide">
+              <svg class="prices__item__icon">
+                <use xlink:href="./img/icons.svg#thing"></use>
+              </svg>
+              <h4 class="prices__item__subtitle">
+                Міжнародна доставка особистих речей
+              </h4>
+              <ul class="prices__item__list">
+                <li class="prices__item__text">Економічний вибір доставки</li>
+                <li class="prices__item__text">Швидка адресна доставка</li>
+                <li class="prices__item__text">Професійна упаковка вантажу</li>
+                <li class="prices__item__text">Доставка в країни ЄС</li>
+                <li class="prices__item__text">Прозора вартість</li>
+                <li class="prices__item__text">Зручний професійний сервіс</li>
+              </ul>
+              <div class="prices__item__box">
+                <p class="prices__item__box__text">від 2000 за 10кг</p>
+              </div>
+            </li>
+            <li class="prices__item slide">
+              <svg class="prices__item__icon">
+                <use xlink:href="./img/icons.svg#passport"></use>
+              </svg>
+              <h4 class="prices__item__subtitle">
+                Доставка паспортів на вклейку візи
+              </h4>
+              <ul class="prices__item__list">
+                <li class="prices__item__text">Глобальна присутність</li>
+                <li class="prices__item__text">
+                  Експертні консультації щодо оформлення віз
+                </li>
+                <li class="prices__item__text">
+                  Швидка доставка паспортів з візових центрів
+                </li>
+                <li class="prices__item__text">
+                  Ефективне співробітництво з візовими центрами
+                </li>
+              </ul>
+              <div class="prices__item__box">
+                <p class="prices__item__box__text">від 2000 грн</p>
+              </div>
+            </li>
+          </ul>
+          <div class="arrow left">
+            <svg class="arrow__icon" width="14" height="14">
+              <use xlink:href="./img/icons.svg#arrow-left"></use>
             </svg>
-            <h4 class="prices__item__subtitle">
-              Міжнародна доставка документів
-            </h4>
-            <ul class="prices__item__list">
-              <li class="prices__item__text">Великий рівень надійності</li>
-              <li class="prices__item__text">Швидкі терміни доставки</li>
-              <li class="prices__item__text">Доставка отримувача</li>
-              <li class="prices__item__text">Доставка по всьому Світу</li>
-              <li class="prices__item__text">Відстеження та звітність</li>
-              <li class="prices__item__text">Конфіденційність та безпека</li>
-            </ul>
-            <div class="prices__item__box">
-              <p class="prices__item__box__text">від 1400 грн</p>
-            </div>
-          </li>
-          <li class="prices__item">
-            <svg class="prices__item__icon">
-              <use xlink:href="./img/icons.svg#parcel"></use>
+          </div>
+          <div class="arrow right">
+            <svg class="arrow__icon" width="14" height="14">
+              <use xlink:href="./img/icons.svg#arrow-right"></use>
             </svg>
-            <h4 class="prices__item__subtitle">Міжнародна доставка посилок</h4>
-            <ul class="prices__item__list">
-              <li class="prices__item__text">Індивідуальна страховка</li>
-              <li class="prices__item__text">Трекінг та відстеження</li>
-              <li class="prices__item__text">Експрес-доставка</li>
-              <li class="prices__item__text">Вантажні послуги</li>
-              <li class="prices__item__text">Таможенне оформлення</li>
-              <li class="prices__item__text">Підтримка клієнтів 24/7</li>
-            </ul>
-            <div class="prices__item__box">
-              <p class="prices__item__box__text">від 1200 грн</p>
-            </div>
-          </li>
-          <li class="prices__item">
-            <svg class="prices__item__icon">
-              <use xlink:href="./img/icons.svg#thing"></use>
-            </svg>
-            <h4 class="prices__item__subtitle">
-              Міжнародна доставка особистих речей
-            </h4>
-            <ul class="prices__item__list">
-              <li class="prices__item__text">Економічний вибір доставки</li>
-              <li class="prices__item__text">Швидка адресна доставка</li>
-              <li class="prices__item__text">Професійна упаковка вантажу</li>
-              <li class="prices__item__text">Доставка в країни ЄС</li>
-              <li class="prices__item__text">Прозора вартість</li>
-              <li class="prices__item__text">Зручний професійний сервіс</li>
-            </ul>
-            <div class="prices__item__box">
-              <p class="prices__item__box__text">від 2000 за 10кг</p>
-            </div>
-          </li>
-          <li class="prices__item">
-            <svg class="prices__item__icon">
-              <use xlink:href="./img/icons.svg#passport"></use>
-            </svg>
-            <h4 class="prices__item__subtitle">
-              Доставка паспортів на вклейку візи
-            </h4>
-            <ul class="prices__item__list">
-              <li class="prices__item__text">Глобальна присутність</li>
-              <li class="prices__item__text">
-                Експертні консультації щодо оформлення віз
-              </li>
-              <li class="prices__item__text">
-                Швидка доставка паспортів з візових центрів
-              </li>
-              <li class="prices__item__text">
-                Ефективне співробітництво з візовими центрами
-              </li>
-            </ul>
-            <div class="prices__item__box">
-              <p class="prices__item__box__text">від 2000 грн</p>
-            </div>
-          </li>
-        </ul>
+          </div>
+          <div class="dots">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="calculator">
+    <section class="calculator" id="calculator">
       <div class="container calculator__overlay">
         <h3 class="title calculator__title">Розрахуйте вартість доставки</h3>
         <p class="calculator__text calculator__text--backdown">
@@ -354,7 +466,7 @@
       </div>
     </section>
 
-    <section class="section services">
+    <section class="section services" id="services">
       <div class="container">
         <h2 class="title services__title">Наші послуги</h2>
         <ul class="services__list">
@@ -473,7 +585,7 @@
       </div>
     </section>
 
-    <section class="section partners">
+    <section class="section partners" id="partners">
       <div class="container">
         <h2 class="title partners__title">Наші партнери</h2>
         <ul class="partners__list">
@@ -553,7 +665,7 @@
       </div>
     </section>
 
-    <section class="section advantages">
+    <section class="section advantages" id="advantages">
       <div class="container">
         <h2 class="title advantages__title">Чому ми?</h2>
         <ul class="advantages__list">
@@ -601,7 +713,7 @@
       </div>
     </section>
 
-    <section class="section contacts">
+    <section class="section contacts" id="contacts">
       <div class="container contacts__overlay">
         <div class="contacts__wrapper">
           <h3 class="contacts__title title">Звяжіться з нами</h3>
@@ -823,7 +935,9 @@
       </div>
     </footer>
 
+    <script type="module" src="./index.js"></script>
+    <script src="js/body-scroll-lock.js"></script>
     <script src="js/mobile-menu.js"></script>
-
+    <script src="js/slider.js"></script>
   </body>
 </html>

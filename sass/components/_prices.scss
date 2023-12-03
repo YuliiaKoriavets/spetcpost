@@ -11,8 +11,10 @@
 }
 
 .prices__list {
-  display: flex;
-  justify-content: space-between;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .prices__item {

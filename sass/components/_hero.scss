@@ -28,6 +28,7 @@
 }
 
 .hero__container {
+  position: relative;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -65,7 +66,7 @@
   }
 }
 
-.hero__input__box {
+.tracking__form {
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -84,7 +85,7 @@
   }
 }
 
-.hero__input {
+.tracking__form__input {
   padding-left: 14px;
   padding-right: 14px;
   border: none;
@@ -108,7 +109,7 @@
   }
 }
 
-.hero__input__btn {
+.tracking__form__btn {
   display: flex;
   justify-content: center;
   align-items: center;
