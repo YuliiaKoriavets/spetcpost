@@ -91,4 +91,7 @@
     <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="hero-arrow-right">
     <path d="m18 6l-1.43 1.393L24.15 15H4v2h20.15l-7.58 7.573L18 26l10-10L18 6z"></path>
   </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="arrow-down">
+    <path d="m12 13.171l4.95-4.95l1.414 1.415L12 16L5.636 9.636L7.05 8.222l4.95 4.95Z"></path>
+  </symbol>
 </svg>

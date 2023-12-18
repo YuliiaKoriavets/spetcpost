@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SPETCPOST</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
     <link rel="stylesheet" href="./dist/css/main.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
@@ -151,7 +152,9 @@
           <ul class="mob__nav__list">
             <li><a class="mob__nav__link" href="#about__us">Про нас</a></li>
             <li><a class="mob__nav__link" href="#prices">Тарифи</a></li>
-            <li><a class="mob__nav__link" href="#calculator">Калькулятор</a></li>
+            <li>
+              <a class="mob__nav__link" href="#calculator">Калькулятор</a>
+            </li>
             <li><a class="mob__nav__link" href="#services">Послуги</a></li>
             <li><a class="mob__nav__link" href="#advantages">Переваги</a></li>
             <li><a class="mob__nav__link" href="#contacts">Контакти</a></li>
@@ -279,7 +282,6 @@
           </form>
 
           <div class="result-container"></div>
-
         </div>
       </div>
     </section>
@@ -312,12 +314,12 @@
         <p class="order__text">
           Отримуйте документи без зайвих витрат часу та сил!
         </p>
-        <button class="btn order__btn" type="button">
+        <a class="btn order__btn" href="#contacts">
           Замовити доставку
           <svg class="order__arrow__icon" width="16" height="16">
             <use xlink:href="./img/icons.svg#arrow-right"></use>
           </svg>
-        </button>
+        </a>
       </div>
     </section>
 
@@ -434,36 +436,138 @@
           SPETCPOST пропонує послуги надсилання документів за кордон швидко,
           безпечно та ефективно.
         </p>
-        <p class="calculator__text">
+        <!-- <p class="calculator__text">
           Відкрийте для себе переваги нашої кур'єрської служби доставки для
           відправлення термінових документів і рекомендованих листів за кордон.
-        </p>
+        </p> -->
         <form class="calculator__form" action="">
-          <div>
-            <label class="calculator__form__label" for="country-of-sending"
-              >Країна відправки</label
-            >
-            <input
-              class="calculator__form__input"
-              id="country-of-sending"
-              type="text"
-            />
+          <div
+            class="calculator__country__overlay calculator__country__overlay--flex"
+          >
+            <div class="calculator__country__input__overlay">
+              <label class="calculator__form__label" for="country-of-sending"
+                >Країна відправки</label
+              >
+              <div class="dropdown-wrapper">
+                <div class="dropdown">
+                  <input
+                    autocomplete="off"
+                    class="calculator__input calculator__input--big"
+                    id="country-of-sending"
+                    type="text"
+                    placeholder="Оберіть країну"
+                    required
+                  />
+                  <button class="dropdown__btn" type="button">
+                    <svg class="dropdown__btn__icon" width="16" height="16">
+                      <use xlink:href="./img/icons.svg#arrow-down"></use>
+                    </svg>
+                  </button>
+                  <div
+                    class="dropdown__content"
+                    id="dropdown-content-sending"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <label class="calculator__form__label" for="sender-zip"
+                >Індекс відправника</label
+              >
+              <input
+                class="calculator__input calculator__input--middle"
+                autocomplete="off"
+                type="text"
+                name=""
+                id="sender-zip"
+                required
+              />
+            </div>
+
+            <div class="calculator__input__overlay--small">
+              <div>
+                <label class="calculator__form__label" for="calculator-number"
+                  >Кількість (шт.)</label
+                >
+                <input
+                  class="calculator__input calculator__input--small"
+                  autocomplete="off"
+                  type="number"
+                  name=""
+                  id="calculator-number"
+                  required
+                />
+              </div>
+
+              <div>
+                <label class="calculator__form__label" for="calculator-weight"
+                  >Вага (кг)</label
+                >
+                <input
+                  class="calculator__input calculator__input--small"
+                  autocomplete="off"
+                  type="text" pattern="[0-9]*[.]?[0-9]+"
+                  name=""
+                  id="calculator-weight"
+                  required
+                />
+              </div>
+            </div>
           </div>
-          <div>
-            <label class="calculator__form__label" for="country-of-receiving"
-              >Країна отримання</label
-            >
-            <input
-              class="calculator__form__input"
-              id="country-of-receiving"
-              type="text"
-            />
+
+          <div class="calculator__country__overlay">
+            <div class="calculator__country__input__overlay">
+              <label class="calculator__form__label" for="country-of-receiving"
+                >Країна отримання</label
+              >
+              <div class="dropdown-wrapper">
+                <div class="dropdown">
+                  <input
+                    autocomplete="off"
+                    class="calculator__input calculator__input--big"
+                    id="country-of-receiving"
+                    type="text"
+                    placeholder="Оберіть країну"
+                    required
+                  />
+                  <button class="dropdown__btn" type="button">
+                    <svg class="dropdown__btn__icon" width="16" height="16">
+                      <use xlink:href="./img/icons.svg#arrow-down"></use>
+                    </svg>
+                  </button>
+                  <div
+                    class="dropdown__content"
+                    id="dropdown-content-receiving"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="calculator__input__overlay--margin">
+              <label class="calculator__form__label" for="recipient-zip"
+                >Індекс отримувача</label
+              >
+              <input
+                class="calculator__input calculator__input--middle"
+                autocomplete="off"
+                type="text"
+                name=""
+                id="recipient-zip"
+                required
+              />
+            </div>
+
+            <div class="calculator__form__btn__overlay">
+              <button class="btn calculator__form__btn" type="submit">
+                Дізнатися вартість
+              </button>
+            </div>
           </div>
-          <button class="btn calculator__form__btn" type="button">
-            Дізнатися вартість
-          </button>
         </form>
       </div>
+      <div class="container tariffs__container"></div>
+      <div class="container error__container"></div>
     </section>
 
     <section class="section services" id="services">
@@ -715,25 +819,35 @@
 
     <section class="section contacts" id="contacts">
       <div class="container contacts__overlay">
-        <div class="contacts__wrapper">
+
+
+        <!-- змінити на реальну електронну адресу -->
+        <form class="contacts__form" action="https://formsubmit.co/bazna.yuliya@gmail.com" method="POST">
           <h3 class="contacts__title title">Звяжіться з нами</h3>
           <div class="contacts__wrapper__inputs">
             <input
               class="contacts__input contacts__input--size"
               type="text"
               placeholder="Ваше ім`я"
+              id="name"
+              name="name"
+              required
             />
             <input
               class="contacts__input contacts__input--size"
-              type="text"
+              type="email"
               placeholder="E-mail"
+               id="email"
+               name="email"
+              required
             />
           </div>
           <textarea
             class="contacts__input contacts__input--textarea"
-            name=""
-            id=""
+            id="message"
+            name="message"
             placeholder="Ваше повідомлення"
+            required
           ></textarea>
           <div class="contacts__wrapper__submit">
             <div class="custom-checkbox">
@@ -755,7 +869,10 @@
               </svg>
             </button>
           </div>
-        </div>
+
+          <!-- змінити на реальну адресу сайту -->
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+        </form>
 
         <div class="border__overlay">
           <div class="background__overlay">
@@ -939,5 +1056,7 @@
     <script src="js/body-scroll-lock.js"></script>
     <script src="js/mobile-menu.js"></script>
     <script src="js/slider.js"></script>
+    <script type="module" src="js/select-countries.js"></script>
+
   </body>
 </html>

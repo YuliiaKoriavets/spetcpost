@@ -62,11 +62,11 @@
 }
 
 .order__btn {
+  display: block;
   padding-left: 18px;
   padding-right: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 266px;
+  text-align: center;
   border: 1px solid var(--accent-color);
   background-color: var(--background-color);
   color: var(--accent-color);
